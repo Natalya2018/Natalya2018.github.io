@@ -37,6 +37,8 @@ var spaceShip = {
     y: 30,
     speedX: 2,
     speedY: 1,
+    width:100,
+    height:100,
 
 
     update: function () {
@@ -45,10 +47,7 @@ var spaceShip = {
         shuttleElem.style.top = this.y + "px";
     }
 }
-var bord = {
-    width: 300,
-    height: 300
-} //document.getElementById('ship');
+
 
 
 function start() {
@@ -62,24 +61,24 @@ function tick() {
         return;
     }
     spaceShip.x += spaceShip.speedX;
-    // вылетел ли мяч правее стены?
-    if (spaceShip.x + spaceShip.width > bord.width) {
+    // вылетел  правее 
+    if (spaceShip.x + spaceShip.width > window.inner.width) {
         spaceShip.speedX = -spaceShip.speedX;
-        spaceShip.x = bord.width - spaceShip.width;
+        spaceShip.x = window.inner.width - spaceShip.width;
     }
-    // вылетел ли мяч левее стены?
+    // вылетел  левее 
     if (spaceShip.x < 0) {
         spaceShip.speedX = -spaceShip.speedX;
         spaceShip.x = 0;
     }
 
     spaceShip.y += spaceShip.speedY;
-    // вылетел ли мяч ниже пола?
-    if (spaceShip.y + spaceShip.height > bord.height) {
+    // вылетел ниже 
+    if (spaceShip.y + spaceShip.height > window.inner.height) {
         spaceShip.speedY = -spaceShip.speedY;
-        spaceShip.y = bord.height - spaceShip.height;
+        spaceShip.y = window.inner.height - spaceShip.height;
     }
-    // вылетел ли мяч выше потолка?
+    // вылетел выше 
     if (spaceShip.y < 0) {
         spaceShip.speedY = -spaceShip.speedY;
         spaceShip.y = 0;
