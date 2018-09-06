@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+}
+
+#menu {
+	height: 10%;
+	border: solid black 4px;
+}
+
+#wrapper {
+	width: 80%;
+	height: 80%;
+	/*margin:0 auto;*/
+	display: none;
+}
+
+canvas {
+	cursor: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	display: block;
+}
+
+#gameOver {
+	background: url('img2/over.jpg') no-repeat;
+	background-size: 70% 80%;
+	position: relative;
+	left: 30%;
+	top: 40%;
+	width: 70%;
+	height: 80%;
+	display: none;
+}
+
+#Repeat {
+	position: absolute;
+	left: 15%;
+	top: 50%;
+	width: 10%;
+	height: 15%;
+}
+
+#Scores {
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	font: 24px Verdana;
+	color: #FF0000;
+	margin: 5px;
+}
+
+#Score {
+	position: absolute;
+	left: 30%;
+	top: 60%;
+	width: 30px;
+}

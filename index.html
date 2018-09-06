@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Астероиды</title>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+	<link rel="stylesheet" href="start.css">
+	<link rel="stylesheet" href="Play2.css">
+</head>
+
+<body>
+	<audio src="sounds/start_sound.mp3" autoplay loop preload></audio>
+	<audio src="sounds/start_sound.mp3"></audio>
+	<div id="menu">
+		<!--<img class="bg" src="img2/asteroids-game.gif">-->
+		<div id="ship">
+			<img id="shuttle" src="img2/anim.png">
+
+		</div>
+		<div class="button">
+			<ul>
+				<li>
+					<!--<img class="button_play" src="img2/playy.png">-->
+					<input type="image" id="Buttonplay" src="img2/playy.png" onclick='gameup()'>
+				</li>
+				<li>
+					<input type="image" id="Set" src="img2/set.png" onclick='victory()'>
+				</li>
+			</ul>
+			<div id="Record">
+				<p id="Text">Рекорд</p>
+				<input type=text id="Count">
+				<a href="index.html">
+					<input type="image" id="Close" src="img2/window-close.png">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!--Игра-->
+
+	<div id="wrapper">
+
+		<canvas id='game'>Элемент не поддерживается </canvas>
+
+
+		<div id="gameOver">
+			<input type="image" id="Repeat" src="img2/repeat.png" onclick='gameup()'>
+			<p id="Scores">Ваш счет</p></br>
+			<input type=text id="Score">
+
+		</div>
+
+
+
+
+
+		<script type="text/javascript" src="start.js"></script>
+		<script type="text/javascript" src="Play2.js"></script>
+</body>
+
+</html>
