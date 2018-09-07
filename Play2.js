@@ -1,7 +1,9 @@
 'use strict';
 var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
-
+if (isGaming==true) {
+	game();
+}
 
 window.addEventListener('resize', resizeCanvas, false); //регистрирует обработчик события - изменение размеров
 
@@ -11,9 +13,7 @@ function resizeCanvas() {
 
 }
 resizeCanvas();
-if (isGaming==true) {
-	game();
-}
+
 
 document.getElementById('Repeat').addEventListener('click', function () {
 	var gameO = document.getElementById('gameOver');
