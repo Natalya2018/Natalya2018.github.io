@@ -76,12 +76,27 @@ explimg.onload = function () {
 //основной игровой цикл
 
 function game() {
-	
+    function(loop) {	
 	update();
 	render();
-	requestAnimationFrame(game);
-}
+	requestAnimationFrame(loop);
+	}
+	canvas.addEventListener('mousemove', onMove);
+	canvas.addEventListener('touchmove', onMove);
 
+	canvas.addEventListener('click', function (event) {
+	shoot();
+	});
+
+	canvas.addEventListener('keydown', function (event) {
+	keyMouse[event.keyCode] = true;
+	});
+
+	canvas.addEventListener('keyup', function (event) {
+	keyMouse[event.keyCode] = false;
+	});
+loop();
+}
 function over() {
 	var gameO = document.getElementById('gameOver');
 	gameO.style.display = "block";
@@ -113,20 +128,7 @@ function onMove(event) {
 		ship.y = event.offsetY - 10;
 	}
 }
-canvas.addEventListener('mousemove', onMove);
-canvas.addEventListener('touchmove', onMove);
 
-canvas.addEventListener('click', function (event) {
-	shoot();
-});
-
-canvas.addEventListener('keydown', function (event) {
-	keyMouse[event.keyCode] = true;
-});
-
-canvas.addEventListener('keyup', function (event) {
-	keyMouse[event.keyCode] = false;
-});
 
 function update() {
 	timer++;
