@@ -87,6 +87,8 @@ function gameup() {
    var back = document.getElementById('menu');
     console.warn(back);
     back.style.display = "none";
+	
+  game();
 }
 
 function victory() {
