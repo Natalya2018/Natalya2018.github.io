@@ -74,7 +74,7 @@ bumSound.src = "sounds/sound_bum.mp3";
 //основной игровой цикл
 
 function game() {
-    function(loop) {	
+    function loop() {	
 	update();
 	render();
 	requestAnimationFrame(loop);
