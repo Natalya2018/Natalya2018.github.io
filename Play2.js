@@ -80,7 +80,7 @@ function game() {
 	render();
 	requestAnimationFrame(game);
 }
-
+}
 function over() {
 	var gameO = document.getElementById('gameOver');
 	gameO.style.display = "block";
@@ -300,4 +300,4 @@ var requestAnimationFrame = (function () {
 		function (callback) {
 			window.setTimeout(callback, 1000 / 20);
 		};
-})()};
+})();
