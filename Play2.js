@@ -11,7 +11,9 @@ function resizeCanvas() {
 
 }
 resizeCanvas();
-if (isGaming==true) game();
+if (isGaming==true) {
+	game();
+}
 
 document.getElementById('Repeat').addEventListener('click', function () {
 	var gameO = document.getElementById('gameOver');
