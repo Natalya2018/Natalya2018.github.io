@@ -85,7 +85,7 @@ function gameup() {
     console.warn(back);
     back.style.display = "none";
 }
-
+if (isGaming==true) game();
 function victory() {
     var rec = document.getElementById('Record');
     rec.style.display = "block";
