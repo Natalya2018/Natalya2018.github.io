@@ -73,8 +73,9 @@ explimg.onload = function () {
 	game();
 }
 //основной игровой цикл
+isGaming = true {
 function game() {
-	isGaming = true;
+	
 	update();
 	render();
 	requestAnimationFrame(game);
@@ -299,4 +300,4 @@ var requestAnimationFrame = (function () {
 		function (callback) {
 			window.setTimeout(callback, 1000 / 20);
 		};
-})();
+})()};
