@@ -19,7 +19,7 @@ document.getElementById('Repeat').addEventListener('click', function () {
 	point = 0;
 });
 
-
+var isGaming = false;
 var aster = [];
 //переменная, отвечающая за координаты астероида; скорость изменения координат
 var fire = []; // массив для выстрелов
@@ -73,7 +73,7 @@ explimg.onload = function () {
 	game();
 }
 //основной игровой цикл
-isGaming = true {
+if isGaming = true {
 function game() {
 	
 	update();
