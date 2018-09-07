@@ -62,7 +62,7 @@ function tick() {
     }
     spaceShip.x += spaceShip.speedX;
     // вылетел  правее 
-    if (spaceShip.x + spaceShip.width <= window.innerWidth) {
+    if (spaceShip.x + spaceShip.width >= window.innerWidth) {
         spaceShip.speedX = -spaceShip.speedX;
         spaceShip.x = window.innerWidth - spaceShip.width;
     }
@@ -74,7 +74,7 @@ function tick() {
 
     spaceShip.y += spaceShip.speedY;
     // вылетел ниже 
-    if (spaceShip.y + spaceShip.height <= window.innerHeight) {
+    if (spaceShip.y + spaceShip.height >= window.innerHeight) {
         spaceShip.speedY = -spaceShip.speedY;
         spaceShip.y = window.innerHeight - spaceShip.height;
     }
@@ -98,9 +98,6 @@ function gameup() {
     var up = document.getElementById('wrapper');
     up.style.display = "block";
     
-     var canv = document.getElementById('game');
-    canv.style.display = "block";
-
 
     var back = document.getElementById('menu');
     console.warn(back);
