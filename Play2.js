@@ -74,6 +74,7 @@ explimg.onload = function () {
 }
 //основной игровой цикл
 function game() {
+	isGaming = true;
 	update();
 	render();
 	requestAnimationFrame(game);
