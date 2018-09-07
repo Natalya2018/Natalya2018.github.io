@@ -68,19 +68,19 @@ expSound.src = "sounds/sound_exp2.mp3";
 
 var bumSound = new Audio();
 bumSound.src = "sounds/sound_bum.mp3";
-var isGaming=false;
+
 explimg.onload = function () {
 	game();
 }
 //основной игровой цикл
-if isGaming==true {
+
 function game() {
 	
 	update();
 	render();
 	requestAnimationFrame(game);
 }
-}
+
 function over() {
 	var gameO = document.getElementById('gameOver');
 	gameO.style.display = "block";
