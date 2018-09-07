@@ -69,9 +69,7 @@ expSound.src = "sounds/sound_exp2.mp3";
 var bumSound = new Audio();
 bumSound.src = "sounds/sound_bum.mp3";
 
-explimg.onload = function () { 
-	game();
-}
+
 
 //основной игровой цикл
 
