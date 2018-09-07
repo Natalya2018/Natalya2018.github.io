@@ -1,9 +1,5 @@
 "use strict";
 var isGaming = false;
-if (isGaming==true) {
-	game();
-}
-
 
 var RAF =
     window.requestAnimationFrame ||
