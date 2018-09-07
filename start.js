@@ -1,26 +1,6 @@
 "use strict";
 var isGaming = false;
 
-function getPosition(e) {
-    var position = {
-        x: null,
-        y: null
-    };
-
-    if (Modernizr.touch) { //глобальная переменная, обнаруживающая 
-        //поддержку сенсорного экрана
-        if (e.touches && e.touches.length > 0) {
-            position.x = e.touches[0].pageX - canvasPosition.x;
-            position.y = e.touches[0].pageY - canvasPosition.y;
-        }
-    } else {
-        position.x = e.pageX - canvasPosition.x;
-        position.y = e.pageY - canvasPosition.y;
-    }
-
-    return position;
-}
-
 
 var RAF =
     window.requestAnimationFrame ||
