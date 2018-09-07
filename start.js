@@ -99,9 +99,9 @@ function gameup() {
     up.style.display = "block";
     
 
-  /*  var back = document.getElementById('menu');
+   var back = document.getElementById('menu');
     console.warn(back);
-    back.style.display = "none";*/
+    back.style.display = "none";
 }
 
 function victory() {
