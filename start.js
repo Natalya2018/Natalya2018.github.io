@@ -101,7 +101,7 @@ function gameup() {
 
     var back = document.getElementById('menu');
     console.warn(back);
-    back.style.display = "block";
+    back.style.display = "none";
 }
 
 function victory() {
