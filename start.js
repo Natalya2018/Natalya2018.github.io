@@ -100,9 +100,7 @@ function gameup() {
     var up = document.getElementById('wrapper');
     up.style.display = "block";
     
-if isGaming==true {
-    game();
-}
+
    var back = document.getElementById('menu');
     console.warn(back);
     back.style.display = "none";
