@@ -62,9 +62,9 @@ function tick() {
     }
     spaceShip.x += spaceShip.speedX;
     // вылетел  правее 
-    if (spaceShip.x + spaceShip.width > window.inner.width) {
+    if (spaceShip.x + spaceShip.width > window.innerWidth) {
         spaceShip.speedX = -spaceShip.speedX;
-        spaceShip.x = window.inner.width - spaceShip.width;
+        spaceShip.x = window.innerWidth - spaceShip.width;
     }
     // вылетел  левее 
     if (spaceShip.x < 0) {
@@ -74,9 +74,9 @@ function tick() {
 
     spaceShip.y += spaceShip.speedY;
     // вылетел ниже 
-    if (spaceShip.y + spaceShip.height > window.inner.height) {
+    if (spaceShip.y + spaceShip.height > window.innerHeight) {
         spaceShip.speedY = -spaceShip.speedY;
-        spaceShip.y = window.inner.height - spaceShip.height;
+        spaceShip.y = window.innerHeight - spaceShip.height;
     }
     // вылетел выше 
     if (spaceShip.y < 0) {
