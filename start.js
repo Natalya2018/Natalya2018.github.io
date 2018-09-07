@@ -93,6 +93,10 @@ start();
 
 var localValue = localStorage.getItem('yourRecord');
 
+if isGaming==true {
+    game();
+}
+
 function gameup() {
     isGaming = true;
     var up = document.getElementById('wrapper');
