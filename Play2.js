@@ -3,7 +3,7 @@ var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
 
 
-window.addEventListener('resize', resizeCanvas, false);
+window.addEventListener('resize', resizeCanvas, false); //регистрирует обработчик события - изменение размеров
 
 function resizeCanvas() {
 	canvas.width = window.innerWidth;
