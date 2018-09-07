@@ -70,10 +70,10 @@ var bumSound = new Audio();
 bumSound.src = "sounds/sound_bum.mp3";
 
 explimg.onload = function () {
-	if isGaming==true {
+	if isGaming==true 
 	game();
 }
-}
+
 //основной игровой цикл
 
 function game() {
