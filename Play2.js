@@ -290,7 +290,7 @@ function render() {
 		context.drawImage(bumimg, 60 * Math.floor(ex[i].animx), 60 * Math.floor(ex[i].animy), 60, 60, ex[i].x, ex[i].y, 50, 50);
 
 }
-
+if isGaming==true {
 var requestAnimationFrame = (function () {
 	return window.requestAnimationFrame ||
 		window.webkitRequestAnimationFrame ||
@@ -300,4 +300,4 @@ var requestAnimationFrame = (function () {
 		function (callback) {
 			window.setTimeout(callback, 1000 / 20);
 		};
-})();
+})();}
