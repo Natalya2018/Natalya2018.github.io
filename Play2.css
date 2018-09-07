@@ -20,7 +20,7 @@ canvas {
 	left: 0;
 	top: 0;
 	width: 100%;
-	display: block;
+	display: none;
 }
 
 #gameOver {
